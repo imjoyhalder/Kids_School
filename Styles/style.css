@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+header{
+    background-color: rgb(247, 247, 247);
+}
+/* shared style */
+.size{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.hidden{
+    display: none;
+}
+.light-gray{
+    font-size: 1rem;
+    color: rgb(128, 128, 128);
+}
+
+/* Navigation Bar */
+nav {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    /* gap: 16.875rem; */
+}
+
+/* Logo Section */
+.school-logo {
+    display: flex;
+    max-width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: start;
+}
+
+.school-logo img {
+    max-width: 50px;
+    /* height: 50px; */
+}
+
+.school-logo p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Menu Section */
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    
+}
+
+/* Menu Link Colors */
+.a1 { color: rgba(18, 237, 11, 0.962); }
+.a2 { color: rgba(10, 83, 230, 0.962); }
+.a3 { color: rgba(185, 20, 222, 0.962); }
+.a4 { color: rgba(23, 219, 226, 0.962); }
+
+/* Hover Effect */
+.menu ul li a:hover {
+    color: #ff8c00;
+}
+
+/* Contact Button */
+.btn {
+    width: 9rem;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(254, 163, 1);
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    justify-self: end;
+}
+
+.btn:hover {
+    background: rgb(255, 136, 0);
+}
+
+/* Hide default checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger Menu */
+/* .hamburger {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    user-select: none;
+} */
+
+/* hero section */
+
+.heading {
+    font-size: 2.8em;
+}
+.hero-content .first-txt{
+    color: #ff8c00;
+}
+
+.hero-info{
+    /* border: 2px solid green; */
+    padding-top: 150px;
+    margin-left: 140px;
+}
+
+.hero {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.hero .hero-image{
+    justify-self: end;
+}
+.hero-content {
+    max-width: 600px;
+}
+.hero h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #ff8c00;
+}
+.hero h1 span {
+    color: #1ba3d9;
+}
+.hero p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+}
+.enroll-btn {
+    background-color: #000000fb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.enroll-btn:hover {
+    background-color: #e67e00;
+}
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Standard Curriculum section */
+.curiculum{
+    background-image: url("../assets/bg.png");
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.curiculum h2, .our-story h2{
+    font-size: 1.8rem;
+    font-weight: 700px;
+    text-align: center;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 80px auto ;
+    column-gap: 28px;
+}
+
+.card-container .box{
+    max-width: 367px;
+    border: 1px solid skyblue;
+    text-align: center;
+    padding-top: 58px;
+    padding-bottom: 53px;
+    
+
+}
+.box-1{
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.box-2{
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.box-3{
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.box img{
+    max-width: 130px;
+   
+}
+.box h4{
+    font-size: 1.5rem;
+    font-weight: 600px;
+}
+.box .more{
+    color: rgb(100, 200, 255);
+    font-weight: 700px;
+}
+/* bidirectional arrow */
+.arrow{
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+.left-arrow img{
+    width: 50px;
+}
+.right-arrow img{
+    width: 60px;
+}
+
+/* Responsive Design for Mobile */
+@media screen and  (max-width: 576px) {
+    .size{
+        max-width: 357px;
+        margin: 0 auto;
+    }
+    nav {
+        grid-template-columns: repeat(2,1fr);
+        padding: 12px 0;
+    }
+    .school-logo img{
+        max-width: 45px;
+    }
+    .school-logo{
+        justify-self: start;
+    }
+    .menubar{
+        justify-self: end;
+    }
+    .menubar img{
+        max-width: 25px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        display: none;
+    }
+
+    /* hero section  */
+   
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .hero-content{
+        grid-row: 2;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-section img {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hero-text {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .hero-text p {
+        font-size: 0.9em;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .hide{
+        display: none;
+    }
+    .hidden{
+        display: block;
+    }
+    nav h1{
+        margin-left: 250px;
+    }
+    .hr-line{
+        border: 1px solid rgba(255, 136, 0, 0.386);
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        padding: 20px;
+    }
+    /* Curriculam section  */
+
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+        justify-items: center;
+    }
+    .card-container .box{
+        max-width: 330px;
+        
+    }
+}
