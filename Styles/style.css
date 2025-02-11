@@ -423,6 +423,7 @@ footer {
     transition: 0.3s;
 }
 
+
 /* Responsive Design for Mobile */
 @media screen and  (max-width: 576px) {
     .size{
