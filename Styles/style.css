@@ -94,9 +94,9 @@ nav {
     justify-self: end;
 }
 
-.btn:hover {
+/* .btn:hover {
     background: rgb(255, 136, 0);
-}
+} */
 
 /* Hide default checkbox */
 #menu-toggle {
@@ -305,6 +305,12 @@ nav {
     top: -20px;
     left: 20px;
 }
+
+.color-1{background-color: #ff8c00;}
+.color-2{background-color:rgb(8, 57, 255);}
+.color-3{background-color: #df05b7;}
+.color-5{background-color: #38ea14;}
+.color-6{background-color: rgb(4, 182, 126);}
 
 .story-content {
     padding: 15px
